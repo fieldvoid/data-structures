@@ -1,0 +1,9 @@
+{
+	"authors": [
+		"Aleksandr Treyger"
+	],
+	"copyright": "Copyright © 2025, Aleksandr Treyger",
+	"description": "Data Structures and other stuff for D",
+	"license": "BSL-1.0",
+	"name": "datastructures"
+}
