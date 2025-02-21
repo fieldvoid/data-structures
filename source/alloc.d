@@ -17,21 +17,23 @@ auto alloc (T, A...) (A args) {
     return obj;
 }
 
-class A {
-    class B {
-        string str;
+unittest {
+    class A {
+        class B {
+            string str;
 
-        this (string str) {
-            this.str = str;
+            this (string str) {
+                this.str = str;
+            }
         }
-    }
 
-    B obj;
-    int x;
+        B obj;
+        int x;
 
-    this (int x) {
-        this.x = x;
-        obj = alloc!B(this, "abc");
+        this (int x) {
+            this.x = x;
+            obj = alloc!B(this, "abc");
+        }
     }
 }
 
